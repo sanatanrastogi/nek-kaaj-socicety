@@ -1,0 +1,117 @@
+.contact-form-section {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.contact-form-container {
+  max-width: 700px;
+  margin: auto;
+  background: #fffaf1;
+  padding: 45px 40px;
+  border-radius: 18px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.contact-form-container h2 {
+  font-size: 30px;
+  color: #8c3027;
+  margin-bottom: 10px;
+  position: relative;
+  font-family: poppins;
+}
+
+.contact-form-container h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #dba860;
+  display: block;
+  margin: 14px auto 0;
+}
+
+.contact-form-container p {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.8;
+  margin-bottom: 35px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Form */
+.contact-form {
+  text-align: left;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #8c3027;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #dba860;
+  font-size: 14.5px;
+  font-family: inherit;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #000;
+  opacity: 0.4;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #db8435;
+  box-shadow: 0 0 0 3px rgba(219, 132, 53, 0.15);
+}
+
+/* Error text (hidden by default) */
+.error-text {
+  display: none;
+  font-size: 12.5px;
+  margin-top: 5px;
+  color: #8c3027;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #db8435;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #dba860;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-form-container {
+    padding: 35px 22px;
+  }
+}

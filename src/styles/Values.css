@@ -1,0 +1,49 @@
+/* src/components/Values.css */
+
+.values-section {
+  background: #fffaf1;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.values-section h2 {
+  font-size: 32px;
+  color: #dba860;
+  margin-bottom: 50px;
+}
+
+.values-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+.value-card {
+  background: #f8fafc;
+  padding: 25px 10px;
+  font-weight: 600;
+  color: #dba860;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  background: #db8435;
+  color: #fffaf1;
+  transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

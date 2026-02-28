@@ -1,0 +1,61 @@
+/* src/components/ImpactSection.css */
+
+.impact-section {
+  background: #dba860;
+  padding: 90px 20px;
+  color: #fffaf1;
+}
+
+.impact-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 40px;
+}
+
+.impact-card {
+  position: relative;
+}
+
+.impact-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.impact-card p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  color: #fffaf1;
+  opacity: 0.9;
+}
+
+/* subtle divider accent */
+.impact-card::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #8c3027;
+  display: block;
+  margin: 14px auto 0;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}

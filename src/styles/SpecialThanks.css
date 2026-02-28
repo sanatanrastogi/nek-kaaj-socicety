@@ -1,0 +1,133 @@
+/* src/components/SpecialThanks.css */
+
+.thanks-section {
+  background: #fffaf1;
+  padding: 80px 30px 100px;
+  text-align: center;
+}
+
+/* Heading */
+.thanks-section h2 {
+  font-size: 34px;
+  font-family: poppins;
+  color: #8c3027;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.thanks-section h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #dba860;
+  display: block;
+  margin: 14px auto 0;
+}
+
+/* Subtitle */
+.thanks-subtitle {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #475569;
+  max-width: 800px;
+  margin: 20px auto 60px;
+  line-height: 1.7;
+}
+
+/* Grid */
+.thanks-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+/* Card */
+.thanks-card {
+  background: #fff;
+  padding: 40px 28px;
+  border-radius: 14px;
+  border: 1px solid rgba(219, 168, 96, 0.35);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Soft gradient overlay */
+.thanks-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(219, 132, 53, 0.08),
+    rgba(140, 48, 39, 0.08)
+  );
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+.thanks-card:hover::before {
+  opacity: 1;
+}
+
+.thanks-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(140, 48, 39, 0.18);
+}
+
+/* Image */
+.thanks-card-photo img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 22px;
+  background: #fffaf1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #db8435;
+  font-size: 28px;
+  border: 1px solid #dba860;
+  transition: 0.35s ease;
+}
+
+/* Name */
+.thanks-card h4 {
+  font-size: 18px;
+  font-family: poppins;
+  color: #8c3027;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Role */
+.thanks-card span {
+  font-size: 14.5px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  opacity: 0.75;
+  line-height: 1.6;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .thanks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .thanks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thanks-section {
+    padding: 60px 20px 80px;
+  }
+}

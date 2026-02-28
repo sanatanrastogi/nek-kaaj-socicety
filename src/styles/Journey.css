@@ -1,0 +1,41 @@
+/* src/components/Journey.css */
+
+.journey-section {
+  background: #f8fafc;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.journey-section h2 {
+  font-size: 32px;
+  color: #dba860;
+  margin-bottom: 50px;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline-item {
+  background: white;
+  padding: 25px 30px;
+  border-left: 4px solid #dba860;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.timeline-item span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #dba860;
+}
+
+.timeline-item p {
+  margin-top: 8px;
+  font-size: 15.5px;
+  color: #475569;
+}

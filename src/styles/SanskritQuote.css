@@ -1,0 +1,69 @@
+/* ============================= */
+/*        SANSKRIT QUOTE         */
+/* ============================= */
+
+.sanskrit-quote-section {
+  background: linear-gradient(to bottom, #fffaf1, #fdf3e7);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.sanskrit-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.ornament {
+  font-size: 20px;
+  color: #dba860;
+  margin-bottom: 25px;
+  letter-spacing: 4px;
+}
+
+/* Sanskrit Text */
+.sanskrit-text {
+  font-size: 28px;
+  line-height: 1.8;
+  color: #8c3027;
+  font-weight: 500;
+  font-family: "Noto Serif Devanagari", serif;
+  white-space: pre-line; /* Preserve line breaks */
+}
+
+/* Decorative Divider */
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #db8435;
+  margin: 35px auto;
+  border-radius: 5px;
+}
+
+/* Meaning */
+.meaning-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #db8435;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.meaning-text {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #8c3027;
+  opacity: 0.95;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sanskrit-text {
+    font-size: 22px;
+  }
+
+  .meaning-text {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,44 @@
+.thankyou-section {
+  background: #fffaf1;
+  padding: 90px 25px;
+  text-align: center;
+}
+
+/* Heading */
+.thankyou-section h2 {
+  font-size: 34px;
+  font-family: poppins;
+  margin-bottom: 18px;
+  color: #8c3027;
+  position: relative;
+}
+
+.thankyou-section h2::after {
+  content: "";
+  width: 140px;
+  height: 3px;
+  background: #dba860;
+  display: block;
+  margin: 14px auto 0;
+}
+
+/* Main text */
+.thankyou-section p {
+  max-width: 820px;
+  margin: 30px auto 0;
+  font-size: 16.5px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.85;
+  color: #000;
+  opacity: 0.78;
+}
+
+/* Closing note */
+.thankyou-note {
+  margin-top: 22px;
+  font-size: 15px;
+  font-family: poppins;
+  font-style: italic;
+  color: #db8435;
+  letter-spacing: 0.3px;
+}

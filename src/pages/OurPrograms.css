@@ -1,0 +1,83 @@
+.programs-section {
+  background: #fffaf1;
+  padding: 90px 25px;
+  text-align: center;
+}
+
+.programs-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Title */
+.programs-container h2 {
+  font-size: 34px;
+  font-family: poppins;
+  color: #8c3027;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.programs-container h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #dba860;
+  display: block;
+  margin: 14px auto 0;
+}
+
+.programs-subtitle {
+  max-width: 750px;
+  margin: 30px auto 50px;
+  font-size: 16.5px;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  opacity: 0.75;
+  line-height: 1.8;
+}
+
+/* Grid */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+/* Card */
+.program-card {
+  background: #fff;
+  border-radius: 16px;
+  padding-bottom: 25px;
+  border: 1px solid rgba(219, 168, 96, 0.3);
+  box-shadow: 0 15px 35px rgba(140, 48, 39, 0.12);
+  transition: 0.35s ease;
+  overflow: hidden;
+  text-align: left;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 55px rgba(140, 48, 39, 0.18);
+}
+
+.program-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.program-card h3 {
+  font-family: poppins;
+  color: #db8435;
+  margin: 20px 20px 10px;
+}
+
+.program-card p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14.8px;
+  line-height: 1.7;
+  color: #000;
+  opacity: 0.75;
+  margin: 0 20px;
+}

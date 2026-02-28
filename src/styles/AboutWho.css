@@ -1,0 +1,62 @@
+/* src/components/AboutWho.css */
+
+.about-who {
+  background: #fffaf1;
+  padding: 40px 30px 100px;
+}
+
+/* Container */
+.about-who-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Heading */
+.about-who-container h2 {
+  font-size: 34px;
+  font-family: poppins;
+  color: #8c3027;
+  margin-bottom: 26px;
+  text-align: center;
+  position: relative;
+}
+
+.about-who-container h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #dba860;
+  display: block;
+  margin: 14px auto 0;
+}
+
+/* Paragraph */
+.about-who-container p {
+  font-size: 16.5px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  color: #475569;
+  text-align: justify;
+  margin-bottom: 18px;
+}
+
+/* Optional emphasis for key lines */
+.about-who-container p strong {
+  color: #8c3027;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-who {
+    padding: 60px 20px 80px;
+  }
+
+  .about-who-container h2 {
+    font-size: 30px;
+  }
+
+  .about-who-container p {
+    font-size: 15.5px;
+  }
+}

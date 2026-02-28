@@ -1,0 +1,54 @@
+.programs-hero {
+  height: 65vh;
+  background: linear-gradient(
+      rgba(140, 48, 39, 0.75),
+      rgba(219, 132, 53, 0.65)
+    ),
+    url("/public/assets/banners/programs-hero.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.programs-hero-overlay {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.programs-hero-content {
+  max-width: 850px;
+  margin: auto;
+  color: #fffaf1;
+}
+
+.programs-hero-content h1 {
+  font-family: poppins;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.programs-hero-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .programs-hero {
+    height: 55vh;
+  }
+
+  .programs-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .programs-hero-content p {
+    font-size: 16px;
+  }
+}

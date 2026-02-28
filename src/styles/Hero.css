@@ -1,0 +1,90 @@
+.hero-section {
+  height: 85vh;
+  background: url("/public/assets/banners/hero.png") center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding: 0 60px;
+  color: #fffaf1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #fffaf1;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn {
+  background: #db8435;
+  color: #fffaf1;
+  border: none;
+  padding: 12px 26px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #8c3027;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #fffaf1;
+  border: 1px solid #dba860;
+  padding: 12px 26px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #dba860;
+  color: #000;
+}
+
+/* Language Switch */
+/* .lang-switch {
+  margin-left: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: 1px solid #fffaf1;
+  color: #fffaf1;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.3s ease;
+}
+
+.lang-switch button:hover {
+  background: #db8435;
+  border-color: #db8435;
+  color: #fff;
+} */

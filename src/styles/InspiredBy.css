@@ -1,0 +1,113 @@
+/* src/components/InspiredBy.css */
+
+.inspired-section {
+  background: #fffaf1;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+/* Heading */
+.inspired-section h2 {
+  font-size: 34px;
+  font-family: poppins;
+  color: #8c3027;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.inspired-section h2::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  background: #dba860;
+  display: block;
+  margin: 14px auto 0;
+}
+
+/* Subtitle */
+.inspired-subtitle {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: #475569;
+  max-width: 720px;
+  margin: 0 auto 60px;
+  line-height: 1.7;
+}
+
+/* Grid */
+.inspired-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.inspired-card {
+  text-align: center;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+/* Image wrapper */
+.img-wrapper {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+  border: 2px solid rgba(219, 168, 96, 0.5);
+  box-shadow: 0 10px 25px rgba(140, 48, 39, 0.18);
+  transition: 0.35s ease;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Name */
+.inspired-card h4 {
+  margin-top: 18px;
+  font-size: 16px;
+  font-family: poppins;
+  color: #8c3027;
+  font-weight: 600;
+}
+
+/* Optional designation / short note */
+.inspired-card span {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #64748b;
+}
+
+/* Hover effects */
+.inspired-card:hover {
+  transform: translateY(-10px);
+}
+
+.inspired-card:hover .img-wrapper {
+  border-color: #db8435;
+  box-shadow: 0 18px 40px rgba(140, 48, 39, 0.25);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .inspired-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .inspired-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}

@@ -1,0 +1,29 @@
+.media-hero {
+  height: 60vh;
+  background: url("/public/assets/banners/media.png") center/cover no-repeat;
+  position: relative;
+}
+
+.media-hero-overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-hero-content {
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+}
+
+.media-hero-content h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.media-hero-content p {
+  font-size: 17px;
+  opacity: 0.9;
+}

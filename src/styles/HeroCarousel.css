@@ -1,0 +1,137 @@
+.hero-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Slide */
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 1s ease, transform 6s ease;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+
+/* Overlay */
+.carousel-overlay {
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content */
+.carousel-content {
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.carousel-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.carousel-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Controls */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.carousel-control:hover {
+  background: #8c3027;
+}
+
+.carousel-control.prev {
+  left: 20px;
+}
+
+.carousel-control.next {
+  right: 20px;
+}
+
+/* Indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.carousel-indicators span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-indicators .active-dot {
+  background: #db8435;
+  transform: scale(1.2);
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.primary-btn {
+  background: #db8435;
+  color: #fffaf1;
+  border: none;
+  padding: 12px 26px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #8c3027;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #fffaf1;
+  border: 1px solid #dba860;
+  padding: 12px 26px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #dba860;
+  color: #000;
+}

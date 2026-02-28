@@ -1,0 +1,95 @@
+.active-members-section {
+  padding: 80px 20px;
+  background: #fffaf1;
+  text-align: center;
+}
+
+.active-members-section h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #8c3027;
+}
+
+.active-members-section h2::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #dba860;
+  display: block;
+  margin: 14px auto 0;
+}
+
+/* Slider wrapper */
+.members-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Moving track */
+.members-track {
+  display: flex;
+  gap: 25px;
+  animation: scrollLeft 30s linear infinite;
+}
+
+/* Card */
+.member-card {
+  flex: 0 0 220px; /* card width */
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-8px);
+}
+
+.member-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.member-card h4 {
+  font-size: 16px;
+  color: #8c3027;
+  margin-bottom: 6px;
+}
+
+.member-card p {
+  font-size: 14px;
+  color: #db8435;
+}
+
+/* Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .member-card {
+    flex: 0 0 180px;
+  }
+  .members-track {
+    animation: scrollLeft 22s linear infinite;
+  }
+}
+
+@media (max-width: 600px) {
+  .member-card {
+    flex: 0 0 150px;
+  }
+  .members-track {
+    animation: scrollLeft 15s linear infinite;
+  }
+}

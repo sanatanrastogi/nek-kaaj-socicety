@@ -1,0 +1,38 @@
+/* src/components/AboutSection.css */
+
+.about-section {
+  background: #fffaf1;
+  padding: 50px 20px 10px 20px;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 34px;
+  font-family: poppins;
+  font-weight: 600;
+  color: #8c3027;
+  margin-bottom: 20px;
+}
+
+.about-container h2::after {
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #dba860;
+  display: block;
+  margin: 14px auto 0;
+}
+
+.about-container p {
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+  color: #000;
+  opacity: 0.8;
+}
+

@@ -1,0 +1,22 @@
+/* src/components/AboutBanner.css */
+
+.about-banner {
+  height: 45vh;
+  background: url("/public/assets/banners/about.png") center/cover no-repeat;
+  position: relative;
+}
+
+.about-banner-overlay {
+  background: rgba(0,0,0,0.45);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-banner-overlay h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
