@@ -77,7 +77,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} NGO Foundation. {t("footer_rights")}</p>
+        <p>© {new Date().getFullYear()} {t("brand_Name")}. {t("footer_rights")}</p>
       </div>
     </footer>
   );

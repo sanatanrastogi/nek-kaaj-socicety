@@ -1,9 +1,9 @@
 /* src/components/Header.css */
 
 /* HARD FIX: hide mobile language switch on desktop */
-.sfpi-nav .mobile-lang {
+/* .sfpi-nav .mobile-lang {
   display: none;
-}
+} */
 
 .sfpi-header {
   width: 100%;
@@ -153,7 +153,7 @@
 
   .sfpi-nav {
     position: absolute;
-    top: 72px;
+    top: 87px;
     left: 0;
     width: 100%;
     background: #fffaf1;
