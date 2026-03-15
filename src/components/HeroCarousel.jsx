@@ -2,34 +2,9 @@ import { useState, useEffect } from 'react';
 import "../styles/HeroCarousel.css";
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import HeroCarouselSlidesData from "../data/HeroCarouselSlidesData.json";
 
-const slidesData = [
-    {
-        image: "/assets/banners/about.png",
-        titleKey: "hero_title",
-        descKey: "hero_desc",
-    },
-    {
-        image: "/assets/banners/contact.png",
-        titleKey: "hero_title2",
-        descKey: "hero_desc2",
-    },
-    {
-        image: "/assets/banners/donate.png",
-        titleKey: "hero_title3",
-        descKey: "hero_desc3",
-    },
-    {
-        image: "/assets/banners/hero.png",
-        titleKey: "hero_title4",
-        descKey: "hero_desc4",
-    },
-    {
-        image: "/assets/banners/programs-hero.png",
-        titleKey: "hero_title5",
-        descKey: "hero_desc5",
-    }
-];
+const slidesData = HeroCarouselSlidesData;
 
 const HeroCarousel = () => {
     const { t } = useTranslation();

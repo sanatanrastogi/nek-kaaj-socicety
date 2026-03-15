@@ -1,0 +1,18 @@
+[
+    {
+        "name": "inspired_by_person1",
+        "image": "/assets/inspired/SudhaMurthy.png"
+    },
+    {
+        "name": "inspired_by_person2",
+        "image": "/assets/inspired/MadanMohanMalviya.png"
+    },
+    {
+        "name": "inspired_by_person3",
+        "image": "/assets/inspired/RatanNavalTata.png"
+    },
+    {
+        "name": "inspired_by_person4",
+        "image": "/assets/inspired/NitaAmbani.png"
+    }
+]

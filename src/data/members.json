@@ -1,0 +1,42 @@
+[
+    {
+        "name": "member1_name",
+        "designation": "member1_designation",
+        "image": "/assets/members/member1.png"
+    },
+    {
+        "name": "member2_name",
+        "designation": "member2_designation",
+        "image": "/assets/members/member2.png"
+    },
+    {
+        "name": "member3_name",
+        "designation": "member3_designation",
+        "image": "/assets/members/member3.png"
+    },
+    {
+        "name": "member4_name",
+        "designation": "member4_designation",
+        "image": "/assets/members/member4.png"
+    },
+    {
+        "name": "member5_name",
+        "designation": "member5_designation",
+        "image": "/assets/members/member5.png"
+    },
+    {
+        "name": "member6_name",
+        "designation": "member6_designation",
+        "image": "/assets/members/member6.png"
+    },
+    {
+        "name": "member7_name",
+        "designation": "member7_designation",
+        "image": "/assets/members/member7.png"
+    },
+    {
+        "name": "member8_name",
+        "designation": "member8_designation",
+        "image": "/assets/members/member8.png"
+    }
+]

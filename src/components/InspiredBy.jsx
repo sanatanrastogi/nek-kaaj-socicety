@@ -1,27 +1,10 @@
 // src/components/InspiredBy.js
 import "../styles/InspiredBy.css";
 import { useTranslation } from "react-i18next";
+import inspirations from "../data/inspirations.json";
 
 const InspiredBy = () => {
   const { t } = useTranslation();
-  const inspirations = [
-    {
-      name: t("inspired_by_person1", "Mrs. Sudha Murty"),
-      image: "/assets/inspired/SudhaMurthy.png"
-    },
-    {
-      name: t("inspired_by_person2", "Ms. Madan Mohan Malviya"),
-      image: "/assets/inspired/MadanMohanMalviya.png"
-    },
-    {
-      name: t("inspired_by_person3", "Ms. Ratan Naval Tata"),
-      image: "/assets/inspired/RatanNavalTata.png"
-    },
-    {
-      name: t("inspired_by_person4", "Mrs. Nita Ambani"),
-      image: "/assets/inspired/NitaAmbani.png"
-    }
-  ];
 
   return (
     <section className="inspired-section">
@@ -34,9 +17,9 @@ const InspiredBy = () => {
         {inspirations.map((person, index) => (
           <div className="inspired-card" key={index}>
             <div className="img-wrapper">
-              <img src={person.image} alt={person.name} />
+              <img src={person.image} alt={t(person.name)} />
             </div>
-            <h4>{person.name}</h4>
+            <h4>{t(person.name)}</h4>
           </div>
         ))}
       </div>
