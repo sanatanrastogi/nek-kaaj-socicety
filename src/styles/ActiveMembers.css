@@ -23,18 +23,26 @@
 .members-slider {
   overflow: hidden;
   position: relative;
+  width: 100%;
+}
+
+.members-slider:hover .members-track {
+  animation-play-state: paused;
 }
 
 /* Moving track */
 .members-track {
   display: flex;
   gap: 25px;
-  animation: scrollLeft 30s linear infinite;
+  width: max-content;
+  animation: scrollMembers 25s linear infinite;
+  will-change: transform;
 }
 
 /* Card */
 .member-card {
-  flex: 0 0 220px; /* card width */
+  flex: 0 0 220px;
+  /* card width */
   background: #ffffff;
   border-radius: 12px;
   padding: 20px;
@@ -50,6 +58,7 @@
   width: 100%;
   height: 220px;
   object-fit: cover;
+  border: 3px solid #f1e2c8;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -57,7 +66,7 @@
 .member-card h4 {
   font-size: 16px;
   color: #8c3027;
-  margin-bottom: 6px;
+  /* margin-bottom: 6px; */
 }
 
 .member-card p {
@@ -66,10 +75,11 @@
 }
 
 /* Animation */
-@keyframes scrollLeft {
+@keyframes scrollMembers {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -80,8 +90,9 @@
   .member-card {
     flex: 0 0 180px;
   }
+
   .members-track {
-    animation: scrollLeft 22s linear infinite;
+    animation-duration: 18s;
   }
 }
 
@@ -89,7 +100,28 @@
   .member-card {
     flex: 0 0 150px;
   }
+
   .members-track {
-    animation: scrollLeft 15s linear infinite;
+    animation-duration: 12s;
   }
+}
+
+.members-slider::before,
+.members-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
+}
+
+.members-slider::before {
+  left: 0;
+  background: linear-gradient(to right, #fffaf1, transparent);
+}
+
+.members-slider::after {
+  right: 0;
+  background: linear-gradient(to left, #fffaf1, transparent);
 }
