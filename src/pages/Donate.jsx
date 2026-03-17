@@ -5,10 +5,15 @@ import DonateBanner from "../components/DonateBanner";
 import DonateDetails from "../components/DonateDetails";
 import ThankYouDonate from "../components/ThankYouDonate";
 import SanskritQuote from "../components/SanskritQuote";
+import { Helmet } from "react-helmet-async";
 
 const Donate = () => {
   return (
     <>
+      <Helmet>
+        <title> Donate | NKCS </title>
+        <meta name="description" content="Support Nek Kaaj Charitable Society and help us serve humanity." />
+      </Helmet>
       <Header />
       <DonateBanner />
       <DonateDetails />

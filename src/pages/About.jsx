@@ -9,10 +9,15 @@ import VisionMission from "../components/VisionMission";
 import InspiredBy from "../components/InspiredBy";
 import SpecialThanks from "../components/SpecialThanks";
 import ActiveMembers from "../components/ActiveMembers";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title> About Us | NKCS </title>
+        <meta name="description" content="Learn more about NKCS and our mission to serve the community." />
+      </Helmet>
       <Header />
       <AboutBanner />
       <InspiredBy />

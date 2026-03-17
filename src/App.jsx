@@ -5,6 +5,7 @@ import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import OurPrograms from "./pages/OurPrograms";
 import Media from "./pages/Media";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/programs" element={<OurPrograms />} />
         <Route path="/media" element={<Media />} />
+
+        {/* 404 fallback route */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

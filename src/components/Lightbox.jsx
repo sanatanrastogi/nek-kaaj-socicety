@@ -18,6 +18,7 @@ const Lightbox = ({ lightbox, setLightbox }) => {
     }, [setLightbox]);
 
     const prev = useCallback(() => {
+        setZoom(false);
         setLightbox(prev => ({
             ...prev,
             index: (prev.index - 1 + images.length) % images.length
@@ -25,6 +26,7 @@ const Lightbox = ({ lightbox, setLightbox }) => {
     }, [images.length, setLightbox]);
 
     const next = useCallback(() => {
+        setZoom(false);
         setLightbox(prev => ({
             ...prev,
             index: (prev.index + 1) % images.length
@@ -84,11 +86,6 @@ const Lightbox = ({ lightbox, setLightbox }) => {
             previousFocus.current?.focus();
         };
     }, [isOpen, index, close, next, prev]);
-
-    // Reset zoom when image changes
-    useEffect(() => {
-        setZoom(false);
-    }, [index]);
 
     /* ===============================
        TOUCH SWIPE
@@ -172,7 +169,10 @@ const Lightbox = ({ lightbox, setLightbox }) => {
                         <button
                             key={i}
                             className={`thumb-btn ${i === index ? "active-thumb" : ""}`}
-                            onClick={() => setLightbox({ ...lightbox, index: i })}
+                            onClick={() => {
+                                setZoom(false);
+                                setLightbox({ ...lightbox, index: i });
+                            }}
                             aria-label={`Open image ${i + 1}`}
                         >
                             <img src={img} alt="" loading="lazy" />
