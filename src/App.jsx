@@ -5,6 +5,7 @@ import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
 import OurPrograms from "./pages/OurPrograms";
 import Media from "./pages/Media";
+import Philosophy from "./pages/Philosophy";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/programs" element={<OurPrograms />} />
         <Route path="/media" element={<Media />} />
+        <Route path="/philosophy" element={<Philosophy />} />
 
         {/* 404 fallback route */}
         <Route path="*" element={<NotFound />} />
