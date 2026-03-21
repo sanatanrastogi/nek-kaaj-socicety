@@ -1,16 +1,54 @@
-# React + Vite
+## 🌿 About the Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Nek Kaaj Charitable Society** is a modern, responsive web application built to represent and support the mission of serving humanity through meaningful social initiatives.
 
-Currently, two official plugins are available:
+This platform showcases the organization’s work in areas like education, healthcare, livelihood support, and community development, while also enabling users to explore programs, view media activities, and contribute through donations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌍 **Multilingual Support** (i18n enabled)
+- 📱 **Fully Responsive Design**
+- 🎯 **Programs Showcase** with image gallery & lightbox
+- 🖼️ **Media Section** for videos and images
+- 🤝 **Donation Integration**
+- 👥 **Active Members Slider**
+- 📜 **Cultural & Sanskrit Section**
+- ⚡ **Fast Performance with Vite**
+- 🔍 **SEO Optimized**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Routing:** React Router
+- **Internationalization:** i18next
+- **Styling:** CSS (custom design system)
+- **UI Enhancements:** Lightbox, animations, carousel
+
+---
+
+## 🎯 Purpose
+
+This project aims to:
+
+- Digitally represent the NGO’s mission and activities
+- Increase awareness and outreach
+- Encourage donations and participation
+- Provide a seamless user experience across devices
+
+---
+
+## ❤️ Mission
+
+> *“Seva Paropkaraya, Jeevanam Dharmasadhanam”*  
+> Serving others is the true purpose of life.
+
+---
+
+## 📌 Status
+
+🚧 Actively under development and improvement
