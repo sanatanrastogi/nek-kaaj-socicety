@@ -10,6 +10,7 @@ const images = [
     "../assets/programs/program2_image2.png",
     "../assets/programs/program3_image1.png",
     "../assets/programs/program3_image2.png",
+    "../assets/programs/program3_image3.png",
     "../assets/programs/program4_image1.png",
     "../assets/programs/program4_image2.png",
     "../assets/programs/program5_image1.png",

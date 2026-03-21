@@ -31,7 +31,7 @@ const Header = () => {
         </div> */}
 
         <div className="logo-container">
-          <img src="/logo.png" alt="Logo" className="logo-img" />
+          <img src="/logo.png" alt="Logo" height={70} />
           <div className="brand-text">
             <h1>{t("brand_Name")}</h1>
             <span>Reg.No.: KAP/03918/2021-2022</span>

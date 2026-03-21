@@ -7,6 +7,9 @@ const images = [
     "../assets/newspaper_cutting/Picture2.png",
     "../assets/newspaper_cutting/Picture3.png",
     "../assets/newspaper_cutting/Picture4.png",
+    "../assets/newspaper_cutting/Picture5.png",
+    "../assets/newspaper_cutting/Picture6.png",
+    "../assets/newspaper_cutting/Picture7.png",
 ];
 
 const NewsPaperCoverages = () => {
