@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Lightbox from "./Lightbox";
 import "../styles/MediaGallery.css";
+import { useTranslation } from "react-i18next";
 
 const images = [
     "../assets/newspaper_cutting/Picture1.png",
@@ -13,6 +14,7 @@ const images = [
 ];
 
 const NewsPaperCoverages = () => {
+    const { t } = useTranslation();
     const [lightbox, setLightbox] = useState({
         isOpen: false,
         images: [],
@@ -22,7 +24,7 @@ const NewsPaperCoverages = () => {
 
     return (
         <section className="media-gallery">
-            <h2>Newspaper Coverages</h2>
+            <h2>{t("newspaper_coverages", "Newspaper Coverages")}</h2>
 
             <div className="gallery-grid">
                 {images.map((img, i) => (
@@ -34,7 +36,7 @@ const NewsPaperCoverages = () => {
                             isOpen: true,
                             images: images,
                             index: i,
-                            title: "News Paper Coverages"
+                            title: t("newspaper_coverages", "Newspaper Coverages")
                         })}
                     />
                 ))}

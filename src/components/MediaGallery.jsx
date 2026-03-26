@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Lightbox from "./Lightbox";
 import "../styles/MediaGallery.css";
+import { useTranslation } from "react-i18next";
 
 const images = [
     "../assets/programs/program1_image1.png",
@@ -27,6 +28,7 @@ const images = [
 ];
 
 const MediaGallery = () => {
+  const { t } = useTranslation();
   const [lightbox, setLightbox] = useState({
     isOpen: false,
     images: [],
@@ -36,7 +38,7 @@ const MediaGallery = () => {
 
   return (
     <section className="media-gallery">
-      <h2>Photo Gallery</h2>
+      <h2>{t("photo_gallery", "Photo Gallery")}</h2>
 
       <div className="gallery-grid">
         {images.map((img, i) => (
@@ -49,7 +51,7 @@ const MediaGallery = () => {
                 isOpen: true,
                 images: images,
                 index: i,
-                title: "Event Gallery",
+                title: t("photo_gallery"),
               })
             }
           />

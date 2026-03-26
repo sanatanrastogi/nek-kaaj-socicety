@@ -1,32 +1,30 @@
 .donate-details {
-  padding: 70px 25px;
-  background: #fffaf1;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #fffaf1, #fff3e2);
+}
+
+/* Header */
+.donate-header {
   text-align: center;
-}
-
-/* Title */
-.donate-details h2 {
-  font-size: 34px;
-  font-family: poppins;
   margin-bottom: 50px;
-  color: #8c3027;
-  position: relative;
 }
 
-.donate-details h2::after {
-  content: "";
-  width: 70px;
-  height: 3px;
-  background: #dba860;
-  display: block;
-  margin: 14px auto 0;
+.donate-header h2 {
+  font-size: 34px;
+  color: #8c3027;
+}
+
+.donate-header p {
+  margin-top: 10px;
+  color: #555;
+  font-size: 15px;
 }
 
 /* Grid */
 .donation-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
   max-width: 1100px;
   margin: auto;
 }
@@ -34,152 +32,108 @@
 /* Card */
 .donation-card {
   background: #fff;
-  border-radius: 16px;
-  padding: 35px 30px;
-  border: 1px solid rgba(219, 168, 96, 0.35);
-  box-shadow: 0 18px 40px rgba(140, 48, 39, 0.12);
-  text-align: left;
-  transition: 0.35s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.donation-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(219, 132, 53, 0.06),
-    rgba(140, 48, 39, 0.06)
-  );
-  opacity: 0;
-  transition: 0.35s ease;
-}
-
-.donation-card:hover::before {
-  opacity: 1;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
 }
 
 .donation-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 26px 55px rgba(140, 48, 39, 0.18);
+  transform: translateY(-6px);
 }
 
-/* Card Title */
+/* Titles */
 .donation-card h3 {
   margin-bottom: 25px;
-  font-family: poppins;
   color: #db8435;
-  position: relative;
-  z-index: 1;
 }
 
-/* Detail Rows */
+/* Rows */
 .detail-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
-  gap: 12px;
-  position: relative;
-  z-index: 1;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #eee;
 }
 
-.detail-row strong {
-  font-family: poppins;
-  color: #8c3027;
-  font-size: 14.5px;
-}
-
-.detail-row span,
-.detail-row a {
-  font-family: "Open Sans", sans-serif;
+.detail-row p {
+  margin: 3px 0 0;
   font-size: 15px;
-  color: #000;
-  opacity: 0.85;
 }
 
-/* Copy Button */
 .detail-row button {
-  border: none;
   background: #dba860;
-  color: #fffaf1;
+  border: none;
   padding: 6px 12px;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s ease;
+  color: #fff;
 }
 
-.detail-row button:hover {
-  background: #db8435;
-  transform: scale(1.05);
-}
-
-/* Tax Note */
-.tax-note {
-  margin-top: 25px;
-  padding: 12px 18px;
-  background: rgba(219, 132, 53, 0.15);
-  color: #8c3027;
-  border-radius: 10px;
+/* Trust Badge */
+.trust-badge {
+  margin-top: 20px;
+  background: #e8f7ee;
+  color: #2e7d32;
+  padding: 10px;
+  border-radius: 8px;
   font-weight: 600;
-  font-family: poppins;
-  display: inline-block;
-  font-size: 14px;
+  text-align: center;
+}
+
+/* UPI Box */
+.upi-box {
+  text-align: center;
+}
+
+.upi-id {
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.upi-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pay-btn {
+  background: linear-gradient(135deg, #db8435, #8c3027);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pay-btn:hover {
+  transform: scale(1.05);
 }
 
 /* QR */
 .qr-image {
   width: 200px;
+  margin: 20px auto;
   display: block;
-  margin: 30px auto 15px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(140, 48, 39, 0.25);
 }
 
 .qr-note {
-  font-size: 14px;
-  font-family: "Open Sans", sans-serif;
-  color: #8c3027;
   text-align: center;
-}
-
-/* Toast */
-.copy-toast {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: #8c3027;
-  color: #fffaf1;
-  padding: 12px 18px;
-  border-radius: 10px;
   font-size: 14px;
-  font-family: poppins;
-  box-shadow: 0 10px 30px rgba(140, 48, 39, 0.35);
-  animation: fadeInUp 0.4s ease;
+  color: #666;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
+/* Mobile */
+@media (max-width: 600px) {
+  .donate-header h2 {
+    font-size: 26px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .upi-actions {
+    flex-direction: column;
   }
-}
-
-/* UPI Link */
-.upi-link {
-  text-decoration: none;
-  color: #db8435;
-  font-weight: 600;
-}
-
-.upi-link:hover {
-  text-decoration: underline;
-  color: #8c3027;
 }

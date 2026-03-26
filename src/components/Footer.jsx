@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 import { useTranslation } from "react-i18next";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import booklet from "../assets/Booklet.pdf";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -35,9 +36,10 @@ const Footer = () => {
           <h4>{t("get_involved", "Get Involved")}</h4>
           <ul>
             <li><Link to="/donate">{t("donate", "Donate")}</Link></li>
-            <li><Link to="/volunteer">{t("volunteer", "Volunteer")}</Link></li>
+            <li><a href={booklet} target="_blank" rel="noopener noreferrer" title={t("brochure")}>{t("brochure")}</a></li>
+            {/* <li><Link to="/volunteer">{t("volunteer", "Volunteer")}</Link></li>
             <li><Link to="/partner">{t("partner_with_us", "Partner With Us")}</Link></li>
-            <li><Link to="/careers">{t("careers", "Careers")}</Link></li>
+            <li><Link to="/careers">{t("careers", "Careers")}</Link></li> */}
           </ul>
         </div>
 
